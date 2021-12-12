@@ -1,0 +1,102 @@
+// IMPORT GLOBAL STYLES
+@import '../globals/global';
+
+// SYLES SPECIFIC TO THIS PAGE
+// LARGE VIEWPORT
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    font-family: $headingFont;
+    font-weight: $heavyWeight;
+    color: $darkBrown;
+    background-color: $cream;
+    padding: 1rem;
+    border-radius: 5px;
+    border-style: double;
+    margin: 20px auto;
+    width: 40%;
+  }
+
+  label {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+
+  input,
+  textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 95%;
+  }
+
+  select,
+  #submit {
+    width: 98%;
+  }
+
+  #contact-info {
+    background-color: $cream;
+    color: $darkBrown;
+    background-color: $cream;
+    padding: 1rem;
+    border-radius: 5px;
+    border-style: double;
+    margin: 20px auto;
+    width: 40%;
+
+    h3 {
+      font-size: 14px;
+      color: $lightBrown;
+      font-family: $headingFont;
+    }
+  }
+
+  h2 {
+    font-size: 30px;
+    font-family: $headingFont;
+    color: $lightBrown;
+    text-decoration: underline overline;
+    text-decoration-style: double;
+    text-decoration-color: $gold;
+    margin-top: 30px;
+  }
+
+  #map {
+    margin: 20px auto;
+    width: 40%;
+  }
+}
+
+// MEDIUM AND SMALL VIEWPORT
+@media screen and (max-width: 621px) {
+  main {
+    #map {
+      background-color: $white;
+      margin: 20px auto;
+      width: 40%;
+      text-align: center;
+    }
+
+    label {
+      font-size: 16px;
+    }
+
+    input,
+    textarea {
+      font-size: 12px;
+    }
+    h3 {
+      font-size: 12px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+}

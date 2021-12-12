@@ -1,0 +1,54 @@
+// LARGE VIEWPORT
+nav {
+  background-color: $lightBrown;
+  margin-top: 0px;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    font-size: 26px;
+    padding: 10px;
+    list-style: none;
+  }
+
+  a {
+    font-family: $headingFont;
+    color: $white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $darkBrown;
+    background-color: $white;
+    padding: 10px;
+  }
+
+  li {
+    margin-right: 20px;
+  }
+
+  .current-page {
+    color: $darkBrown;
+    background-color: $white;
+    padding: 10px;
+  }
+}
+
+// MEDIUM VIEWPORT
+@media screen and (max-width: 900px) {
+  // DROPDOWN MENU
+  .drop-down-menu ul {
+    display: none;
+    padding: 1rem;
+  }
+
+  .drop-down-menu ul li {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .show ul {
+    display: block;
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Temple Inn & Suites</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="/templeInn/src/styles/reservation/reservation.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato:wght@100;300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <div id="border">
+                <img id="logo" src="/templeInn/src/images/logo.png" alt="The Temple Inn Logo">
+            </div>
+        </div>
+        <div id="title-container">
+            <h1>The Temple Inn & Suites</h1>
+            <h2><i>Serving You as You Serve in the House of the Lord</i></h2>
+        </div>
+        <div id="reserve-now-container">
+            <a href="/templeInn/src/reservation.html">
+                <button id="reserve-now" type="button" >Reserve Now</button>
+            </a>
+        </div>
+        <img id="menu-icon" src="/templeInn/src/images/menu-icon.png" alt="Menu Icon">    
+    </header>
+    <nav class="drop-down-menu">
+        <ul>
+            <li class="hamburger-link"><a href="/templeInn/src/index.html">Home</a></li>
+            <li class="hamburger-link"><a href="/templeInn/src/temple.html">Temples</a></li>
+            <li class="hamburger-link"><a href="/templeInn/src/reservation.html" class="current-page">Reservations</a></li>
+            <li class="hamburger-link"><a href="/templeInn/src/services.html">Services</a></li>
+            <li class="hamburger-link"><a href="/templeInn/src/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="thankyou.html">
+            <label> Full Name: 
+                <br>
+                <input class="bar-input" type="text" name="full-name" required pattern="[A-Za-z]{5,}">
+            </label>
+            <label>eMail:
+                <br>
+                <input class="bar-input" type="email" name="email" required placeholder="user@email.org">
+            </label>
+            <label>Phone Number:
+                <br>
+                <input class="bar-input" type="tel" name="phone-number" required placeholder="(123) 456-7890">
+            </label>
+            <label>Reservation Date
+                <br>
+                <input class="bar-input" type="date" name="reservation-date" required>
+            </label>
+            <label>
+                <select name="reservation-location" onchange="selectResponse()">
+                    <option value="" disabled selected>Select a location ...</option>
+                    <option value="Idaho Falls">Idaho Falls</option>
+                    <option value="Rexburg">Rexburg</option>
+                    <option value="Kansas City">Kansas City</option>
+                    <option value="Oklahoma City">Oklahoma City</option>
+                </select>
+            </label>
+            <label>
+                <select name="number-of-rooms" onchange="selectResponse()">
+                    <option value="" disabled selected>Select number of rooms ...</option>
+                    <option value="1">1 Room</option>
+                    <option value="2">2 Rooms</option>
+                    <option value="3">3 Rooms</option>
+                    <option value="4">4 Rooms</option>
+                    <option value="5">5 Rooms</option>
+                    <option value="6">6 Rooms</option>
+                </select>
+            </label>
+            <label>
+                <select name="room-type" onchange="selectResponse()">
+                    <option value="" disabled selected>Select type of rooms</option>
+                    <option value="Single">Single</option>
+                    <option value="Double">Double</option>
+                    <option value="Triple">Triple</option>
+                    <option value="Quad">Quad</option>
+                </select>
+            </label>
+            <label> Home State or Country
+                <br>
+                <input class="bar-input" type="text" name="home-state" required pattern="[A-Za-z]{2,}">
+            </label>
+            <label>Additional Comments:
+                <br>
+                <textarea name="comments" rows="5" cols="50"></textarea>
+            </label>
+            <label>
+                <input id="submit" type="submit" name="submit" value="Submit">
+            </label>
+        </form>
+    </main>
+    <footer>
+            <p>&copy; <span id="year"></span> | Emilio Regino | Idaho | <a href="https://www.byui.edu/online">BYU-Idaho</a></p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="/templeInn/src/scripts/global.js"></script>
+    <script src="/templeInn/src/scripts/reservation.js"></script>
+</body>
+</html>

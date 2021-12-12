@@ -1,0 +1,157 @@
+// LARGE VIEWPORT
+header {
+  background-color: $gold;
+  padding: 1em 1em 0.5em;
+  display: flex;
+  justify-content: space-between;
+
+  #logo-container {
+    height: 60%;
+    width: 8rem;
+    background-color: $white;
+    margin: 0;
+    margin-left: 1rem;
+    text-align: center;
+    border-radius: $logoBoarderRadius;
+  }
+
+  #border {
+    border-radius: $logoBoarderRadius;
+    border-style: double;
+    border-color: $gold;
+    border-width: 20px;
+  }
+
+  #logo {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+  }
+
+  #title-container {
+    margin-top: 10px;
+    margin-left: 6em;
+    text-align: center;
+  }
+
+  h1 {
+    color: $white;
+    margin-bottom: None;
+    margin: 0px;
+    font-size: 36px;
+    font-family: $headingFont;
+  }
+
+  h2 {
+    color: $darkBrown;
+    margin: 0px;
+    font-size: 20px;
+    font-family: $bodyFont;
+  }
+
+  #reserve-now-container {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  #reserve-now {
+    background-color: $darkBrown;
+    color: $white;
+    width: 15rem;
+    height: 3rem;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 1em;
+    font-family: $headingFont;
+  }
+  #menu-icon {
+    display: none;
+  }
+}
+
+// MEDIUM VIEWPORT PT 1
+@media screen and (max-width: 900px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+
+    #logo-container {
+      min-height: 60%;
+      min-width: 8rem;
+    }
+
+    #title-container {
+      text-align: left;
+      margin-left: 0;
+    }
+
+    #reserve-now-container {
+      display: none;
+    }
+
+    #reserve-now {
+      display: none;
+    }
+
+    #menu-icon {
+      display: block;
+      max-width: 4rem;
+      margin: 1rem 2rem;
+    }
+  }
+}
+//MEDIUM VIEWPORT PT 2
+@media screen and (max-width: 703px) {
+  header {
+    #title-container {
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+  }
+}
+
+// SMALL VIEWPORT
+@media screen and (max-width: 622px) {
+  header {
+    #title-container {
+      margin-top: 10px;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    #logo-container,
+    #border,
+    #logo {
+      display: none;
+    }
+
+    #title-container {
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+  }
+}

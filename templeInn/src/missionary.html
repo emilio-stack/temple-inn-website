@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Temple Inn & Suites</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="/templeInn/src/styles/missionary/missionary.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato:wght@100;300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <div id="border">
+                <img id="logo" src="/templeInn/src/images/logo.png" alt="The Temple Inn Logo">
+            </div>
+        </div>
+        <div id="title-container">
+            <h1>The Temple Inn & Suites</h1>
+            <h2><i>Serving You as You Serve in the House of the Lord</i></h2>
+        </div>
+        <div id="reserve-now-container">
+            <a href="/templeInn/src/reservation.html">
+                <button id="reserve-now" type="button" >Reserve Now</button>
+            </a>
+        </div>
+        <img id="menu-icon" src="/templeInn/src/images/menu-icon.png" alt="Menu Icon">    
+    </header>
+    <nav class="drop-down-menu">
+        <ul>
+            <li class="hamburger-link"><a href="/templeInn/src/index.html">Home</a></li>
+            <li class="hamburger-link"><a href="/templeInn/src/temple.html">Temples</a></li>
+            <li class="hamburger-link"><a href="/templeInn/src/reservation.html">Reservations</a></li>
+            <li class="hamburger-link"><a href="/templeInn/src/services.html" class="current-page">Services</a></li>
+            <li class="hamburger-link"><a href="/templeInn/src/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Missionary Accomodations</h2>
+        <div id="hero-container">
+            <picture>
+                <source srcset="/templeInn/src/images/missionary-hero-medium.jpeg" alt="The Rexburg Idaho Temple"
+                media="(min-width: 622px) and (max-width: 900px)">
+                <source srcset="/templeInn/src/images/missionary-hero.jpeg" alt="The Rexburg Idaho Temple"
+                media="(min-width: 901px)">
+                <img id="hero" src="/templeInn/src/images/missionary-hero-small.jpeg" alt="The Rexburg Idaho Temple">
+            </picture>
+        </div>
+        <div class="heading-container">
+            <h2>Double Suite</h2>
+        </div>
+        <div class="paragraph">
+            <p>
+                We are pround to host both full-time missionaries and senior missionary couples as they come to serve in the House of the Lord. 
+                We offer discounted rates for both full-time and senior missionary couples and we have a variety of rooms to choose from for your stay.
+            </p>
+            <form action="willcontact.html">
+                <label>Message Us:
+                    <br>
+                    <textarea name="comments" rows="5" cols="50"></textarea>
+                </label>
+                <label>
+                    <input id="submit" type="submit" name="submit" value="Send">
+                </label>
+            </form>
+        </div>
+    </main>
+    <footer>
+            <p>&copy; <span id="year"></span> | Emilio Regino | Idaho | <a href="https://www.byui.edu/online">BYU-Idaho</a></p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="/templeInn/src/scripts/global.js"></script>
+</body>
+</html>
